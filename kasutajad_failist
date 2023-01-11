@@ -1,12 +1,15 @@
 #! /bin/bash
-for kasutaja in $(sed -n '1p' kasutajanimed)
-	do useradd $kasutaja
+if [ $# -ne 1 ]; then
+	echo "Kasutusjuhend: $0 failinimi"
+else
+	failinimi=$1
+if [ -f $failinimi -a -r $failinimi ]; then
+	echo "fail on korras"
+	for nimi in $(cat $failinimi)
+	do
+	sh lisa_kasutaja $nimi
 	done
-for kasutaja2 in $(sed -n '2p' kasutajanimed)
-	do useradd $kasutaja2
-        done
-for kasutaja3 in $(sed -n '3p' kasutajanimed)
-        do useradd $kasutaja3
-        done
-tail -3 /etc/passwd
-
+else
+echo "probleem failiga $failinimi"
+fi
+fi
