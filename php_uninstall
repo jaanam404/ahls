@@ -1,0 +1,9 @@
+#! /bin/bash
+apt remove php
+apt remove --purge php
+apt purge php7.* 
+apt autoclean
+apt autoremove
+reboot
+ 
+
