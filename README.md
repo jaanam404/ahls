@@ -9,3 +9,5 @@
 * Loob uue kasutaja (https://github.com/jaanam404/ahls/blob/main/lisa_kasutaja)
 * Võtab nimed failist ja loob nende järgi uued kasutajad (https://github.com/jaanam404/ahls/blob/main/kasutajad_failist)
 * Paigaldab Apache2 (https://github.com/jaanam404/ahls/blob/main/apache_paigaldamine.sh)
+* Uninstallib PHP (https://github.com/jaanam404/ahls/blob/main/php_uninstall)
+* Paigaldab Phpmyadmin (https://github.com/jaanam404/ahls/blob/main/phpmyadmin)
